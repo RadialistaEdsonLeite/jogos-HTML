@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qual é a Música?</title>
-    <link rel="stylesheet" href="https://radialistaedsonleite.github.io/jogos-CSS/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
+    <div class="container">
         <h1>🎵 Qual é a Música? 🎵</h1>
-        <button id="start-game">Iniciar Jogo</button>
-        <audio id="audio-player" controls style="display: none;"></audio>
-        <div id="question-container" style="display: none;">
-            <p id="question-text">Ouça a música e escolha a resposta correta:</p>
-            <div id="options"></div>
-        </div>
+        <audio id="audio" controls></audio>
+        <div id="options" class="options"></div>
+        <p id="feedback"></p>
         <p id="score">Pontuação: 0</p>
     </div>
-    <script src="https://radialistaedsonleite.github.io/jogos-js/script.js"></script>
-    <script src="https://RadialistaEdsonLeite.github.io/jogos-js/QualEAMusica1.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
