@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qual é a Música?</title>
-    <link rel="stylesheet" href="qualeamusica1inter/style.css">
+    <title>Jogos HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎵 Qual é a Música? 🎵</h1>
-        <audio id="audio" controls></audio>
-        <div id="options" class="options"></div>
-        <p id="feedback"></p>
-        <p id="score">Pontuação: 0</p>
-    </div>
-    <script src="qualeamusica1inter/script.js"></script>
+    <h1>Bem-vindo à página de Jogos HTML</h1>
+    <p>Clique no botão abaixo para jogar <strong>Qual é a Música?</strong></p>
+    
+    <a href="qualeamusica1inter/index.html" class="btn">Jogar Agora 🎵</a>
 </body>
 </html>
