@@ -8,7 +8,17 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
+            margin: 0;
+            height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+            display: flex;
+            flex-direction: column; /* Organiza os elementos na vertical */
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            background-color: #f4f4f4; /* Cor de fundo suave */
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 30px; /* Espaçamento entre título e botões */
         }
         .btn {
             display: inline-block;
@@ -19,6 +29,7 @@
             text-decoration: none;
             border-radius: 10px;
             transition: 0.3s;
+            margin: 10px 0; /* Espaçamento vertical entre os botões */
         }
         .btn:hover {
             background-color: #0056b3;
@@ -26,10 +37,13 @@
     </style>
 </head>
 <body>
-    <h1>Bem-vindo à página de Jogos HTML</h1>
-    <p>Clique no botão abaixo para jogar <strong>Qual é a Música?</strong></p>
+    <h2>Bem-vindo à página dos jogos mais completos sobre músicas que marcaram época!</h2>
+    <p>Clique no botão abaixo, ouça um trecho, e responda <strong>Qual é a Música? Ganhe pontos!</strong> São 10 músicas que fizeram muito sucesso.</p>
     
-    <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Jogar Agora 🎵</a>
+    <!-- Botões para escolha do jogo -->
+    <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Internacionais/70 #001 🎵</a>
+    <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Internacionais/70 #002 🎵</a>
+    <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Internacionais/70 #003 🎵</a>
 
 </body>
 </html>
