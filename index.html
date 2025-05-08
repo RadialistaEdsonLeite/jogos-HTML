@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,19 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
-            height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+            height: 100vh;
             display: flex;
-            flex-direction: column; /* Organiza os elementos na vertical */
-            justify-content: flex-start; /* Centraliza verticalmente */
-            align-items: center; /* Centraliza horizontalmente */
-            background-color: #f7faff; /* Cor de fundo suave */
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #f7faff;
         }
+
         h2 {
             color: darkblue;
-            margin-bottom: 30px; /* Espaçamento entre título e botões */
+            margin-bottom: 20px;
         }
+
         .btn {
             display: inline-block;
             padding: 10px 10px;
@@ -31,25 +34,60 @@
             text-decoration: none;
             border-radius: 10px;
             transition: 0.3s;
-            margin: 10px 0; /* Espaçamento vertical entre os botões */
+            margin: 10px 0;
+            cursor: pointer;
         }
+
         .btn:hover {
             background-color: #0056b3;
         }
+
+        #opcoesJogos {
+            display: none;
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
-    <h2><font color="red">Qual é a Música?</font>
-<p>Bem-vindo à página mais completa de jogos sobre músicas que marcaram época!</h2>
-    <p>Clique no botão abaixo, ouça, responda <strong> e ganhe pontos!</strong> São 10 músicas que fizeram muito sucesso.</p>
-    
-    <!-- Botões para escolha do jogo -->
-    <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Internacionais/70 #001 🎵</a>
-    <a href="https://radialistaedsonleite.github.io/qualeamusica2inter/" class="btn">Internacionais/70 #002 🎵</a>
-    <a href="https://radialistaedsonleite.github.io/qualeamusica3inter/" class="btn">Internacionais/70 #003 🎵</a>
-    <a href="https://radialistaedsonleite.github.io/qualeamusica4inter/" class="btn">Internacionais/70 #004 🎵</a>
-    <a href="https://radialistaedsonleite.github.io/qualeamusica5inter/" class="btn">Internacionais/70 #005 🎵</a>
-    <a href="https://radialistaedsonleite.github.io/qualmusica1//" class="btn">Internacionais/70 #006 🎵</a>
+
+    <h2>
+        <font color="red">Qual é a Música?</font><br>
+        <p>Bem-vindo à página mais completa de jogos sobre músicas que marcaram época!</p>
+    </h2>
+
+    <input type="text" id="nomeJogador" placeholder="Digite seu nome" />
+    <br><br>
+    <button class="btn" onclick="mostrarOpcoes()">Entrar no Jogo</button>
+
+    <p style="margin-top: 20px;">Clique em uma das opções abaixo, ouça, responda <strong>e ganhe pontos!</strong> São 10
+        músicas que fizeram muito sucesso.</p>
+
+    <div id="opcoesJogos">
+            <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Internacionais/70 #001 🎵</a>
+        <div class="btn" onclick="iniciarJogo('qualeamusica2inter')">Internacionais/70 #002 🎵</div>
+        <div class="btn" onclick="iniciarJogo('qualeamusica3inter')">Internacionais/70 #003 🎵</div>
+        <div class="btn" onclick="iniciarJogo('qualeamusica4inter')">Internacionais/70 #004 🎵</div>
+        <div class="btn" onclick="iniciarJogo('qualeamusica5inter')">Internacionais/70 #005 🎵</div>
+        <div class="btn" onclick="iniciarJogo('qualmusica1')">Internacionais/70 #006 🎵</div>
+    </div>
+
+    <script>
+        function mostrarOpcoes() {
+            const nome = document.getElementById("nomeJogador").value.trim();
+            if (nome === "") {
+                alert("Por favor, digite seu nome.");
+                return;
+            }
+            localStorage.setItem("nomeJogador", nome);
+            document.getElementById("opcoesJogos").style.display = "block";
+        }
+
+        function iniciarJogo(link) {
+            window.location.href = `https://radialistaedsonleite.github.io/${link}/`;
+        }
+    </script>
 
 </body>
+
 </html>
