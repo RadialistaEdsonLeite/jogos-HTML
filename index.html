@@ -84,7 +84,6 @@
         <font color="red">Qual é a Música?</font><br>
         <p>Bem-vindo à página mais completa de jogos sobre músicas que marcaram época!</p>
     </h2>
-<input type="text" id="nomeJogador" placeholder="Digite seu nome" />
     <br><br>
     
     <button class="btn" onclick="mostrarOpcoes()">Entrar no Jogo</button>
@@ -103,12 +102,6 @@
 
     <script>
         function mostrarOpcoes() {
-            const nome = document.getElementById("nomeJogador").value.trim();
-            if (nome === "") {
-                alert("Por favor, digite seu nome.");
-                return;
-            }
-            localStorage.setItem("nomeJogador", nome);
             document.getElementById("opcoesJogos").style.display = "block";
         }
 
