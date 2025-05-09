@@ -4,72 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos HTML</title>
+    <title>Qual é a Música? - Games de Flash Back</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
+            padding: 20px;
             background-color: #f7faff;
         }
 
-        h2 {
-            color: darkblue;
-            margin-bottom: 20px;
+        h1 {
+            color: #d60000;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto 20px;
         }
 
         .btn {
-            display: inline-block;
-            padding: 10px 10px;
-            font-size: 20px;
+            display: block;
+            padding: 12px 20px;
+            font-size: 18px;
             color: white;
             width: 95%;
             max-width: 700px;
             background-color: #063b96;
             text-decoration: none;
             border-radius: 10px;
-            transition: 0.3s;
-            margin: 10px 0;
-            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 10px auto;
         }
 
         .btn:hover {
             background-color: #0056b3;
         }
 
-        </style>
+        #opcoesJogos {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>
-        <font color="red">Qual é a Música?</font><br>
-        <p>Bem-vindo à página mais completa de jogos sobre músicas que marcaram época!</p>
-    </h2>
-    <br><br>
-    
-        <p style="margin-top: 20px;">Clique em uma das opções abaixo, ouça, responda <strong>e ganhe pontos!</strong> São 10
-        músicas que fizeram muito sucesso.</p>
+    <h1>🎶 Qual é a Música?</h1>
+    <p>Bem-vindo à <strong>página principal</strong> dos jogos musicais! Aqui você testa seus conhecimentos com canções que marcaram época. São desafios divertidos, nostálgicos e cheios de emoção!</p>
+
+    <p><strong>Clique em uma das opções abaixo, ouça, responda e ganhe pontos!</strong> Cada jogo traz 10 músicas inesquecíveis dos anos 70.</p>
 
     <div id="opcoesJogos">
-            <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Internacionais/70 #001 🎵</a>
-        <div class="btn" onclick="iniciarJogo('qualeamusica2inter')">Internacionais/70 #002 🎵</div>
-        <div class="btn" onclick="iniciarJogo('qualeamusica3inter')">Internacionais/70 #003 🎵</div>
-        <div class="btn" onclick="iniciarJogo('qualeamusica4inter')">Internacionais/70 #004 🎵</div>
-        <div class="btn" onclick="iniciarJogo('qualeamusica5inter')">Internacionais/70 #005 🎵</div>
-        <div class="btn" onclick="iniciarJogo('qualmusica1')">Internacionais/70 #006 🎵</div>
+        <a href="https://radialistaedsonleite.github.io/qualeamusica1inter/" class="btn">Internacionais/70 #001 🎵</a>
+        <a href="https://radialistaedsonleite.github.io/qualeamusica2inter/" class="btn">Internacionais/70 #002 🎵</a>
+        <a href="https://radialistaedsonleite.github.io/qualeamusica3inter/" class="btn">Internacionais/70 #003 🎵</a>
+        <a href="https://radialistaedsonleite.github.io/qualeamusica4inter/" class="btn">Internacionais/70 #004 🎵</a>
+        <a href="https://radialistaedsonleite.github.io/qualeamusica5inter/" class="btn">Internacionais/70 #005 🎵</a>
+        <a href="https://radialistaedsonleite.github.io/qualmusica1/" class="btn">Internacionais/70 #006 🎵</a>
     </div>
-
-    <script>
-        function iniciarJogo(link) {
-            window.location.href = `https://radialistaedsonleite.github.io/${link}/`;
-        }
-    </script>
-
 </body>
 
 </html>
